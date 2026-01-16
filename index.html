@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEE-XMD GO - Streaming & Multimedia Platform</title>
+    <link rel="icon" type="image/x-icon" href="https://files.catbox.moe/el0qlh.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="https://files.catbox.moe/el0qlh.jpeg" alt="FEE-XMD GO Logo" class="logo" id="appLogo">
+                <div>
+                    <div class="app-name">FEE-XMD GO</div>
+                    <div class="app-tagline">Streaming & Multimedia Platform</div>
+                </div>
+            </div>
+            <div class="user-controls">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="user-avatar" id="userAvatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Side Menu -->
+        <div class="side-menu" id="sideMenu">
+            <div class="side-menu-header">
+                <h3>FEE-XMD GO Menu</h3>
+                <button class="close-menu" id="closeMenu">&times;</button>
+            </div>
+            <div class="side-menu-content">
+                <a href="#" class="menu-item" data-page="home">
+                    <i class="fas fa-home"></i> Home
+                </a>
+                <a href="#" class="menu-item" data-page="live">
+                    <i class="fas fa-tv"></i> Live Streaming
+                </a>
+                <a href="#" class="menu-item" data-page="movies">
+                    <i class="fas fa-film"></i> Movies & Trailers
+                </a>
+                <a href="#" class="menu-item" data-page="tutorials">
+                    <i class="fas fa-graduation-cap"></i> Tutorials
+                </a>
+                <a href="#" class="menu-item" data-page="downloader">
+                    <i class="fas fa-download"></i> Media Downloader
+                </a>
+                <a href="#" class="menu-item" data-page="coding">
+                    <i class="fas fa-code"></i> Coding Tools
+                </a>
+                <div class="menu-divider"></div>
+                <a href="#" class="menu-item" id="menuSettings">
+                    <i class="fas fa-cog"></i> Settings
+                </a>
+                <a href="#" class="menu-item" id="menuAbout">
+                    <i class="fas fa-info-circle"></i> About & License
+                </a>
+                <a href="#" class="menu-item" id="menuContact">
+                    <i class="fas fa-envelope"></i> Contact
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Authentication Modal -->
+    <div class="modal" id="authModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Welcome to FEE-XMD GO</h3>
+                <button class="close-modal" data-modal="authModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Login</button>
+                    <button class="auth-tab" data-tab="signup">Sign Up</button>
+                </div>
+                
+                <form id="loginForm" class="auth-form active">
+                    <div class="form-group">
+                        <label for="loginEmail">Email or Username</label>
+                        <input type="text" id="loginEmail" placeholder="Enter email or username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" placeholder="Enter password" required>
+                        <div class="password-toggle">
+                            <i class="fas fa-eye" id="toggleLoginPassword"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-sign-in-alt"></i> Login
+                    </button>
+                </form>
+                
+                <form id="signupForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="signupUsername">Username</label>
+                        <input type="text" id="signupUsername" placeholder="Choose username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupEmail">Email Address</label>
+                        <input type="email" id="signupEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="signupPassword">Password</label>
+                        <input type="password" id="signupPassword" placeholder="Create password" required>
+                        <div class="password-toggle">
+                            <i class="fas fa-eye" id="toggleSignupPassword"></i>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-user-plus"></i> Create Account
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main id="mainContent">
+        <!-- Home Page Content will be loaded here -->
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active" data-page="home">
+            <i class="fas fa-home nav-icon"></i>
+            <span class="nav-label">Home</span>
+        </a>
+        <a href="#" class="nav-item" data-page="live">
+            <i class="fas fa-tv nav-icon"></i>
+            <span class="nav-label">Live</span>
+        </a>
+        <a href="#" class="nav-item" data-page="movies">
+            <i class="fas fa-film nav-icon"></i>
+            <span class="nav-label">Movies</span>
+        </a>
+        <a href="#" class="nav-item" data-page="tutorials">
+            <i class="fas fa-graduation-cap nav-icon"></i>
+            <span class="nav-label">Tutorials</span>
+        </a>
+        <a href="#" class="nav-item" data-page="downloader">
+            <i class="fas fa-download nav-icon"></i>
+            <span class="nav-label">Downloader</span>
+        </a>
+        <a href="#" class="nav-item" data-page="coding">
+            <i class="fas fa-code nav-icon"></i>
+            <span class="nav-label">Coding</span>
+        </a>
+    </nav>
+
+    <!-- About Modal -->
+    <div class="modal" id="aboutModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>About FEE-XMD GO</h3>
+                <button class="close-modal" data-modal="aboutModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="about-content">
+                    <div class="developer-info">
+                        <h4><i class="fas fa-user-tie"></i> Developer Information</h4>
+                        <p><strong>Name:</strong> Fredi.E.Ezra</p>
+                        <p><strong>Country:</strong> Tanzania</p>
+                        <p><strong>Email:</strong> frediezra360@gmail.com</p>
+                        <p><strong>WhatsApp:</strong> +255 752 593 977</p>
+                        <p><strong>P.O. Box:</strong> Not specified</p>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4><i class="fas fa-share-alt"></i> Social Media</h4>
+                        <div class="social-grid">
+                            <a href="https://facebook.com/FrediEzra" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://instagram.com/frediezra" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://tiktok.com/@frediezra1" target="_blank" class="social-link">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </a>
+                            <a href="https://thread.com/frediezra" target="_blank" class="social-link">
+                                <i class="fas fa-comment"></i> Thread
+                            </a>
+                            <a href="https://github.com/Fred1e" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="license-info">
+                        <h4><i class="fas fa-file-contract"></i> License & Policy</h4>
+                        <p>This web application is developed for educational and entertainment purposes.</p>
+                        <p>All rights reserved © 2025 Fredi.E.Ezra</p>
+                        <p class="small-text">Version 1.0.0 | Made in Tanzania</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Contact Developer</h3>
+                <button class="close-modal" data-modal="contactModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> frediezra360@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> <strong>WhatsApp:</strong> +255 752 593 977</p>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Tanzania</p>
+                    
+                    <div class="contact-form">
+                        <h4>Send Message</h4>
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <input type="text" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="Your Message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button class="close-modal" data-modal="settingsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-section">
+                    <h4><i class="fas fa-palette"></i> Appearance</h4>
+                    <div class="setting-item">
+                        <span>Theme</span>
+                        <select id="themeSelect">
+                            <option value="auto">Auto (Device Preference)</option>
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <span>Accent Color</span>
+                        <div class="color-picker">
+                            <div class="color-option active" style="background-color: #FF6600;" data-color="#FF6600"></div>
+                            <div class="color-option" style="background-color: #FF3366;" data-color="#FF3366"></div>
+                            <div class="color-option" style="background-color: #33CCFF;" data-color="#33CCFF"></div>
+                            <div class="color-option" style="background-color: #66CC33;" data-color="#66CC33"></div>
+                            <div class="color-option" style="background-color: #FFCC00;" data-color="#FFCC00"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h4><i class="fas fa-download"></i> Download Settings</h4>
+                    <div class="setting-item">
+                        <span>Default Download Quality</span>
+                        <select id="qualitySelect">
+                            <option value="high">High</option>
+                            <option value="medium">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="autoDownload" checked>
+                            <span>Auto-download after preview</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="settings-section">
+                    <h4><i class="fas fa-history"></i> History & Data</h4>
+                    <div class="setting-item">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="saveHistory" checked>
+                            <span>Save viewing history</span>
+                        </label>
+                    </div>
+                    <button class="btn btn-secondary btn-block" id="clearHistory">
+                        <i class="fas fa-trash"></i> Clear All History
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+    <script src="home.js"></script>
+    <script src="live.js"></script>
+    <script src="movies.js"></script>
+    <script src="tutorials.js"></script>
+    <script src="downloader.js"></script>
+    <script src="coding.js"></script>
+</body>
+</html>
