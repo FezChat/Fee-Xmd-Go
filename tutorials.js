@@ -15,17 +15,17 @@ async function loadTutorials() {
         tutorialsData = [
             {
                 id: 1,
-                title: "JavaScript Fundamentals",
+                title: "How To Use Bible Command",
                 category: "video",
-                duration: "45:22",
-                author: "John Doe",
-                views: 1250,
+                duration: "1min+",
+                author: "Fredi Ezra",
+                views: 2570,
                 rating: 4.9,
                 difficulty: "Beginner",
-                description: "Learn JavaScript basics with practical examples.",
-                thumbnail: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-                videoUrl: "https://tutorials.example.com/js-fundamentals.mp4",
-                downloadUrl: "https://tutorials.example.com/js-fundamentals.zip"
+                description: "This video teach WhatsApp bot users about how to use bible command in Fee-xmd WhatsApp bot.",
+                thumbnail: "https://files.catbox.moe/5sh4fp.jpeg",
+                videoUrl: "https://files.catbox.moe/9dprzr.mp4",
+                downloadUrl: "https://files.catbox.moe/9dprzr.mp4"
             },
             {
                 id: 2,
