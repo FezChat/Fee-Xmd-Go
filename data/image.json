@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "title": "Bot Command Reference",
+        "duration": "8 images",
+        "author": "Fredi Ezra",
+        "views": 3200,
+        "rating": 4.9,
+        "difficulty": "Beginner",
+        "description": "Complete visual guide to all available bot commands with examples.",
+        "caption": "This image shows all available commands with detailed explanations and usage examples for Fee-xmd WhatsApp bot. The guide includes command syntax, parameters, and practical usage scenarios.",
+        "thumbnail": "https://files.catbox.moe/2p9t7x.jpeg",
+        "images": [
+            "https://files.catbox.moe/2p9t7x.jpeg",
+            "https://files.catbox.moe/4k8q1w.jpeg",
+            "https://files.catbox.moe/6j2t5r.jpeg",
+            "https://files.catbox.moe/8p3q9w.jpeg"
+        ],
+        "downloadUrl": "https://github.com/Fred1e/fee-xmd-docs/raw/main/images/commands-guide.zip",
+        "fileSize": "8.7 MB",
+        "uploadDate": "2024-01-20"
+    }
+]
