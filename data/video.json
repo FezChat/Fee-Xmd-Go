@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "How To Use Bible Command",
+        "duration": "1:15",
+        "author": "Fredi Ezra",
+        "views": 2570,
+        "rating": 4.9,
+        "difficulty": "Beginner",
+        "description": "This video teach WhatsApp bot users about how to use bible command in Fee-xmd WhatsApp bot.",
+        "thumbnail": "https://files.catbox.moe/5sh4fp.jpeg",
+        "videoUrl": "https://files.catbox.moe/9dprzr.mp4",
+        "downloadUrl": "https://files.catbox.moe/9dprzr.mp4",
+        "fileSize": "15.2 MB",
+        "resolution": "720p",
+        "uploadDate": "2024-01-15"
+    },
+    {
+        "id": 2,
+        "title": "Advanced Bot Configuration",
+        "duration": "5:32",
+        "author": "Fredi Ezra",
+        "views": 1890,
+        "rating": 4.8,
+        "difficulty": "Intermediate",
+        "description": "Learn advanced configuration for Fee-xmd WhatsApp bot with custom commands.",
+        "thumbnail": "https://files.catbox.moe/3k7t9x.jpeg",
+        "videoUrl": "https://files.catbox.moe/7b4q2s.mp4",
+        "downloadUrl": "https://files.catbox.moe/7b4q2s.mp4",
+        "fileSize": "42.5 MB",
+        "resolution": "1080p",
+        "uploadDate": "2024-01-10"
+    },
+    {
+        "id": 3,
+        "title": "Quick Tips - Short Tutorial",
+        "duration": "0:45",
+        "author": "Fredi Ezra",
+        "views": 3200,
+        "rating": 4.7,
+        "difficulty": "Beginner",
+        "description": "Quick tips for using Fee-xmd bot efficiently.",
+        "thumbnail": "https://files.catbox.moe/1q2w3e.jpeg",
+        "videoUrl": "https://files.catbox.moe/short1.mp4",
+        "downloadUrl": "https://files.catbox.moe/short1.mp4",
+        "fileSize": "8.5 MB",
+        "resolution": "480p",
+        "uploadDate": "2024-01-18"
+    }
+]
